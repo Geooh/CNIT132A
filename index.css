@@ -1,16 +1,29 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
+    background-color: #f6ffef;
 }
 
-ul {
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-}
+ul { list-style-type: none; }
 
 li {
     display: inline;
-    margin-right: 15px;
+    margin: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: right;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+a { text-decoration: none; }
+
+h1, h2, h3, h4, h5 {
+    text-align: center;
+}
+
+p {
+    /* text-align: center; */
+    font-size: 1.2em;
 }
