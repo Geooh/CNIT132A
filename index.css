@@ -25,17 +25,20 @@ li { display: inline; margin: 10px; }
 }
 
 a { text-decoration: none; }
-a:link { color: rgb(0, 0, 0); background-color: transparent; text-decoration: none; }
+a:link { color: rgb(10, 124, 0); background-color: transparent; text-decoration: none; }
 a:visited { color: rgb(0, 0, 0); background-color: transparent; text-decoration: none; }
 a:hover { color: rgb(126, 0, 0); background-color: transparent; text-decoration: none; }
 a:active { color: rgb(126, 0, 0); background-color: transparent; text-decoration: none;}
 
+.center { display: block; margin-left: auto; margin-right: auto; }
+
+figcaption { text-align: center; font: italic; }
+
 h1, h2, h3, h4, h5 { text-align: center; }
+
 p { font-size: 1.2em; }
 
-.div-body {
-    text-align: center;
-}
+.div-body { text-align: center; }
 
 input[type=text], select, textarea {
     width: 100%;
