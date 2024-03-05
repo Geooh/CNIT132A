@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Working with Grids</title>
+   <meta charset="utf-8">
+   <meta name="description" content="working with grids in CNIT 132A">
+   <style>
+    .page-layout {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 10vh; 
+    }
+    .company, .footer {
+        padding-top: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+	.news, .links, .search, .messages {
+        padding-top: 10px;
+	    text-align: center;
+	    font-weight: bold;
+	}
+    .company {
+        background-color: rgba(255,99,71,255);
+        height: 2vh;
+    } 
+	.news { background-color: yellow; }
+	.links {
+	    background-color: rgb(0, 0, 170);
+        color: white;
+
+        padding-top: 30px;
+        text-align: left;
+    }
+	.search {
+	    background-color: violet;
+        color: blue;
+
+        padding-top: 30px;
+        text-align: left;
+	}
+	.messages { background-color: pink; }
+    .footer {
+        background-color: rgba(144,238,144,255);
+        height: 4vh;
+    }
+
+   </style>
+</head>
+<body>
+    <div class="company">Name of Company</div>
+
+    <div class="page-layout">
+        <div class="news">This is the aside 1</div>
+        <div class="links">
+            This is the main article of my page! This is the main content of the page. 
+            In a 3-column layout, it shouldbe shown in the middle between teh aside 1 and aside 2!
+        </div>
+
+        <div class="search">
+            This column was created to have some content as a challenge to adapt the old 
+            3-column layout to a 4-column layout
+        </div>
+        <div class="messages">This is the aside 2</div>
+    </div>
+
+    <div class="footer">This the footer<br/>Copyright &#169; 2017</div>
+</body>
+</html>
