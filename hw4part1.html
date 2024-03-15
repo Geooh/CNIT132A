@@ -15,39 +15,60 @@
    <meta charset="utf-8">
    <meta name="description" content="working with grids in CNIT 132A">
    <style>
-      .page-layout {
-         height: 100vh;
-         width: 100%;
+    .page-layout {
+        height: 100vh;
+        width: 100%;
 
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         grid-row: auto;
-      }
-	  .news, .links, .search, .messages {
-	      text-align: center;
-		   font-weight: bold;
-	  }
-	  .news {
-	      background-color: cyan;
-	  }
-	  .links {
-	      background-color: orange;
-	  }
-	  .search {
-	      background-color: violet;
-	  }
-	  .messages {
-	      background-color: red;
-	  }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row: auto;
+    }
+	.news, .links, .search, .messages {
+	    text-align: center;
+	    font-weight: bold;
+	}
+	.news {
+	    background-color: cyan;
+	}
+	.links {
+	    background-color: orange;
+	}
+	.search {
+	    background-color: violet;
+	}
+    .messages {
+        background-color: red;
+	}
+    .btn-container {
+    /* border: 1px solid black; */
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .return-btn {
+        display: block;
+        width: 20%;
+        border-radius: 50px;
+        padding: 14px 28px;
+        margin-left: 40%;
+
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+    }
    </style>
 </head>
 <body>
 <div class="page-layout">
-  <div class="news">News</div>
-  <div class="links">Links</div>
-  <div class="search">Search</div>
-  <div class="messages">Messages</div>
+    <div class="news">News</div>
+    <div class="links">Links</div>
+    <div class="search">Search</div>
+    <div class="messages">Messages</div>
 </div>
-<button class="return-btn"><a href="assignments.html">Go Back</a></button>
+
+<div class="btn-container">
+    <div class="return-btn">
+      <button><a href="/assignments.html">Previous Page</a></button>
+    </div>
+</div>
 </body>
 </html>

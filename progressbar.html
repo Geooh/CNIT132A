@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animated Progress Bar</title>
+<meta charset="utf-8">
+<meta name="description" content="working with Semantics using HTML5 and CSS3 in CNIT 132A">
+<style>
+body { background: black; 
+       color: white; }
+.bar-unfill {
+    height:15px;
+    display:block;
+    background:#fff;
+    width:100%;
+    border-radius:8px
+}
+@-webkit-keyframes progressbar { 
+    from {
+        width:0
+    }
+    to {
+        width:100%
+    }
+}
+@keyframes progressbar {
+    from {
+        width:0
+    }
+    to {
+        width:100%
+    }
+}
+progress, progress::-webkit-progress-bar{
+    height:15px;
+    display:block;
+    background-color:yellow;
+    width:0;
+    -webkit-border-radius: 8px;
+    border-radius:8px;
+    color: #fff;
+    -webkit-transition:width .8s ease;
+    -moz-transition:width .8s ease;
+    transition:width .8s ease;
+    -webkit-animation:progressbar 7s forwards;
+    animation:progressbar 7s forwards;
+}
+
+
+</style>
+</head>
+<body>
+<h1>Animated Progress Bar</h1>
+<div class="title html5">HTML5 Progress Bars</div>
+<div class="bar">
+   <span class="bar-unfill">
+      <progress value="50" max="100"></progress>
+   </span>
+</div>   
+</body>
+</html>
