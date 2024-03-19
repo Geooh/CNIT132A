@@ -24,7 +24,7 @@
     background-image: url(banner.png); 
     margin: 0 auto; 
     text-align: center; 
-    border-shadow: 5px 5px 5px gray; 
+    box-shadow: 5px 5px 5px gray; 
     font-size: 1.5rem; 
     color: black;
   }
@@ -66,37 +66,37 @@
 
 </head>
 <body>
-  <header id="header" role="banner">
-    <img src="./images/banner.png">
+  <header id="header">
+    <img src="./images/banner.png" alt="banner-img">
     <h1>Great Movies</h1>
     <h2>Great Directors</h2>
   </header>
 <div itemscope itemtype="https://schema.org/Movie">
   <h3 itemprop="name">Avatar</h3>
-  <p itemprop="director">Director: James Cameron (born August 16, 1954)</p>
+  <p itemprop="director" itemscope itemprop="birthDate">Director: James Cameron (born August 16, 1954)</p>
   <p itemprop="genre">Type: Science fiction</p>
-  <p datetime="date">Release Date: December 18, 2009</p>
+  <p datetime="2009-12-18">Release Date: December 18, 2009</p>
 </div>
 <div itemscope itemtype="https://schema.org/Movie">
   <h3 itemprop="name">Star Wars: Episode VII</h3>
-  <p itemprop="director" itemprop="birthDate">Director: J. J. Abrams (born June 27, 1966)</p>
+  <p itemprop="director" itemscope itemprop="birthDate">Director: J. J. Abrams (born June 27, 1966)</p>
   <p itemprop="genre">Type: Science fiction</p>
-  <p datetime="date">Release Date: December 18, 2015</p>
+  <p datetime="2015-12-18">Release Date: December 18, 2015</p>
 </div>
 <div itemscope itemtype="https://schema.org/Movie">
   <h3 itemprop="name">Titanic</h3>
-  <p itemprop="director" itemprop="birthDate">Director: James Cameron (born August 16, 1954)</p>
+  <p itemprop="director" itemscope itemprop="birthDate">Director: James Cameron (born August 16, 1954)</p>
   <p itemprop="genre">Type: Drama</p>
-  <p datetime="date">Release Date: December 19, 1997</p>
+  <p datetime="1997-12-19">Release Date: December 19, 1997</p>
 </div>
 <div itemscope itemtype="https://schema.org/Movie">
   <h3 itemprop="name">Schindler's List</h3>
-  <p itemprop="director" itemprop="birthDate">Director: Steven Spielberg (born December 18, 1946)</p>
-  <p itempro="genre">Type: Drama</p>
-  <p datetime="date">Release Date: December 15, 1993</p>
+  <p itemprop="director" itemscope itemprop="birthDate">Director: Steven Spielberg (born December 18, 1946)</p>
+  <p itemprop="genre">Type: Drama</p>
+  <p datetime="1993-12-15">Release Date: December 15, 1993</p>
 </div>
-<footer id="footer" role="img">
-  <img src="./images/movielogo.png">
+<footer role="contentinfo">
+  <img src="./images/movielogo.png" alt="footer-img">
   <p>List made by CNIT 132A class at CCSF</p>
   <p>Copyright &copy; 2017</p>
 </footer>  
