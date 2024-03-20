@@ -16,7 +16,9 @@
 <meta charset="utf-8">
 <style>
   body { 
-    font-size: 19px;
+    font-size: 18px;
+    /* font-size: 15px;
+    font-weight: bold; */
     background-color: #DEB887; 
     color: #A52A2A; 
   }
@@ -28,6 +30,9 @@
     box-shadow: 5px 5px 5px gray; 
     font-size: 1.5rem; 
     color: black;
+  }
+  h1, h2 {
+    text-align: center;
   }
   div { 
     width: 80%; 
@@ -68,36 +73,42 @@
 </head>
 <body>
   <header id="header">
-    <img src="./images/banner.png" alt="movie reel">
-    <h1>Great Movies</h1>
-    <h2>Great Directors</h2>
+    <img src="./images/banner.png" alt="movie-reel">
   </header>
+
+  <h1>Great Movies</h1>
+  <h2>Great Directors</h2>
+
 <div itemscope itemtype="https://schema.org/Movie">
   <h3 itemprop="name">Avatar</h3>
   <p itemprop="director">Director: James Cameron (born August 16, 1954)</p>
   <p itemprop="genre"> Type: Science fiction</p>
   <time datetime="2009-12-18">Release Date: December 18, 2009</time>
 </div>
+
 <div itemscope itemtype="https://schema.org/Movie">
   <h3 itemprop="name">Star Wars: Episode VII</h3>
   <p itemprop="director">Director: J. J. Abrams (born June 27, 1966)</p>
   <p itemprop="genre"> Type: Science fiction</p>
   <time datetime="2015-12-18">Release Date: December 18, 2015></time>
 </div>
+
 <div itemscope itemtype="https://schema.org/Movie">
   <h3 itemprop="name">Titanic</h3>
   <p itemprop="director">Director: James Cameron (born August 16, 1954)</p>
   <p itemprop="genre">Type: Drama</p>
   <time datetime="1997-12-19">Release Date: December 19, 1997</time>
 </div>
+
 <div itemscope itemtype="https://schema.org/Movie">
   <h3 itemprop="name">Schindler's List</h3>
   <p itemprop="director">Director: Steven Spielberg (born December 18, 1946)</p>
   <p itemprop="genre">Type: Drama</p>
   <time datetime="1993-12-15">Release Date: December 15, 1993</time>
 </div>
-<footer role="contentinfo">
-  <img src="./images/movielogo.png" alt="video camera">
+
+<footer>
+  <img src="./images/movielogo.png" alt="video-camera">
   <p>List made by CNIT 132A class at CCSF</p>
   <p>Copyright &copy; 2017</p>
 </footer>  
