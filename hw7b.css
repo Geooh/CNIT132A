@@ -5,7 +5,7 @@
 
 img {
     float: left;
-    shape-outside: url("../images/house.png");
+    shape-outside: url(../images/house.png);
     shape-margin: 3px;
 }
 
