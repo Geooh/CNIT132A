@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animation of Ball</title>
+<meta charset="utf-8">
+<meta name="description" content="Animating a Ball">
+<style>
+body { background-color: #00b72e;  /* green */ }
+@keyframes rolling { 
+   0% { left: 0; top: 0; }
+   50% { left: 200px; top: 50px; }
+   100% { left: 350px; top: 60px; }
+}
+#field { height: 150px;
+         position: relative; 
+		 min-width: 450px; }
+#field:hover #ball { animation: rolling 5s linear forwards; }
+#ball { background-color: white;
+        border-radius: 50%;
+		height: 50px; 
+		width: 50px;
+		position: absolute; }
+#blackhole { background-color: black;
+             border-radius: 30px;
+			 height: 50px;
+			 width: 70px;
+			 perspective: 500;
+			 position: absolute;
+			 top: 60px;
+			 left: 400px; }
+@keyframes showing {
+   from { visibility: hidden; }
+   to    { visibility: visible; }
+}
+#banner { position: absolute;
+          top: 130px;
+		  left: 350px;
+		  font-size: 0.8em;
+		  font-weight: bold;
+		  font-style: italic;
+		  width: 100px;
+		  height: auto;
+		  visibility: hidden; }
+#field:hover #banner { animation: showing 2s linear 5s forwards; }
+</style>
+</head>
+<body>
+<h1>A loose ball on the grass...</h1>
+<div id="field">
+   <div id="ball"></div>
+   <div id="blackhole"></div>
+   <div id="banner">Ouch! We almost lost the ball in the black hole!</div>
+</div>
+</body>
+</html>
