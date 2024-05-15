@@ -65,8 +65,8 @@ footer {
 a { text-decoration: none; }
 a:link { color: rgb(0, 0, 0); background-color: transparent; text-decoration: none; }
 a:visited { color: rgb(0, 0, 0); background-color: transparent; text-decoration: none; }
-a:hover { color: rgb(87, 75, 190); background-color: transparent; text-decoration: none; }
-a:active { color: rgb(87, 75, 190); background-color: transparent; text-decoration: none;}
+a:hover { color: rgb(76, 147, 255); background-color: transparent; text-decoration: none; }
+a:active { color: rgb(76, 147, 255); background-color: transparent; text-decoration: none;}
 
 .center { display: block; margin-left: auto; margin-right: auto; }
 
@@ -112,6 +112,7 @@ p { font-size: 1.2em; }
 .container-hw8 {
   /* border: 1px dotted black; */
 
+  font-size: 1.2em;
   margin-top: 2%;
   padding: 3%;
 }
@@ -120,6 +121,15 @@ p { font-size: 1.2em; }
   /* border: 1px dotted black; */
 
   margin-bottom: 5%;
+}
+
+.container-hw8part2 {
+  /* border: 1px solid black; */
+
+  text-align: justify;
+  font-size: 1.1em;
+
+  padding: 2%;
 }
 
 .div-assignments { 
@@ -163,8 +173,8 @@ input[type=text], select, textarea {
     padding: 20px;
 }
 
-.btn-container {
-  /* border: 1px solid black; */
+/* .btn-container {
+  border: 1px solid black;
 
   position: relative;
 }
@@ -180,4 +190,4 @@ input[type=text], select, textarea {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
+} */
