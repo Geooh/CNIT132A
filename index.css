@@ -1,32 +1,51 @@
 * { 
-  /* background-color:#cacac9; */
-  font-family: Arial, Helvetica, sans-serif; 
-
+  background-color:#fcfcfc;
+  /* background-color:#95da8b; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   box-sizing: border-box;
 }
 
 .nav-bar {
-  border: 1px solid black;
-  background-color:#6bc9ff;
-  
   list-style-type: none;
-  border-radius: 5px;
+  line-height: 1.6; 
+
   font-size: 1.3em;
   font-weight: bold;
-  line-height: 1.6; 
+
   text-align: right;
-  padding-right: 20px;
+  padding-right: 2%;
 }
 
 footer {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+
   background-color:#6bc9ff;
   border-radius: 5px;
 }
 
-.assignments-row {
+.assignment-div {
+  border: 2px solid black;
+
+  margin: auto;
+  width: 50%;
+  padding: 2%;
+  line-height: 3em;
+}
+
+.assignment-div dt {
+  font-size: 24px;
+  /* translate: 28%; */
+}
+
+.assignment-div dd {
+  font-size: 20px;
+  /* translate: 30%; */
+}
+
+/* .assignments-row {
   border: 1px solid rgb(170, 170, 170);
 
+  border: 1px solid black;
   display: flex;
   text-align: center;
   font-size: 1.2em;
@@ -34,11 +53,14 @@ footer {
 
 .assignments-column {
   border: 1px solid rgb(170, 170, 170);
-  
+  border: 1px solid black;
+
+  text-align: center;
+  line-height: 1.2em;
   flex: 50%;
-  /* width: 50%; */
-  padding: 10px;
-}
+  padding: 15px;
+  padding: 3%;
+} */
 
 a { text-decoration: none; }
 a:link { color: rgb(0, 0, 0); background-color: transparent; text-decoration: none; }
@@ -52,7 +74,21 @@ figcaption { text-align: center; font: italic; }
 
 h1, h2, h3, h4, h5 { text-align: center; }
 
+.body-info {
+  /* border: 1px dotted black; */
+
+  margin-top: 5%;
+}
+
 p { font-size: 1.2em; }
+
+.index-img {
+  /* border: 1px solid black; */
+  
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
 
 .container {
   /* border: 1px solid black; */
@@ -61,7 +97,30 @@ p { font-size: 1.2em; }
   grid-template-rows: 25% 100px auto;
 }
 
-.div-body { text-align: center; }
+.container-contact {
+  /* border: 1px dotted black; */
+
+  text-align: center;
+  margin-top: 2%;
+  padding: 3%;
+}
+
+.container-contact h1 {
+  padding-bottom: 4%;
+}
+
+.container-hw8 {
+  /* border: 1px dotted black; */
+
+  margin-top: 2%;
+  padding: 3%;
+}
+
+.container-hw8 h1 {
+  /* border: 1px dotted black; */
+
+  margin-bottom: 5%;
+}
 
 .div-assignments { 
   /* border: 1px solid black; */
